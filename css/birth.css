@@ -7,12 +7,38 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     width: 100vw;
-    background-color: #212121;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+
+    min-height: 100vh;
+    /* If you want to change the site height you can remove overflow-y */
+    /* pureSnow will automatically detect height of body tag */
+    overflow-y: hidden;
     margin: 0;
 }
 
+/* snowfall background style start */
+#toggle-snow{
+    display: none;
+  }
+  .snowflake {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(white, white);
+    /* Workaround for Chromium's selective color inversion */
+    border-radius: 50%;
+    filter: drop-shadow(0 0 10px white);
+}
+#snow{
+    position: absolute ;
+    top: 0 ;
+    left: 0 ;
+}
+/* snowfall background style end */
+
+
+/* card section style start */
 .card {
     width: 500px;
     height: auto;
@@ -87,3 +113,4 @@ tr{
         transform: translateY(10px);
     }
 }
+/* card section style end */

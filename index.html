@@ -1,68 +1,50 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maisun Rahman Mehek</title>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />    <!--aos plugincdn-->
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/responsive.css">
+    <title>test2</title>
+    <link rel="stylesheet" href="./css/birth.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kablammo&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <div class="name_section">
-        <div class="sername">
-            <h1>MEHEK</h1>
-        </div>
-        <video src="./img/smoke.mp4" autoplay muted class="text_video"></video>
-        <h1>
-            <span>M</span>
-            <span>A</span>
-            <span>I</span>
-            <span>S</span>
-            <span>U</span>
-            <span>N</span>
-            &nbsp;                                    
-            <span>R</span>
-            <span>A</span> 
-            <span>H</span>
-            <span>M</span>
-            <span>A</span>
-            <span>N</span>
-        </h1>
-        <div class="heart"></div>
-    </div>
-    <div class="moving-border"></div>
 
-    <div class="main_house">
-        <div class="house">
-            <div class="left_house_sec" data-aos="zoom-in">
-                <img src="./img/house.png" alt="house_image">
-            </div> 
-            <div class="right_house_sec">
-            <img src="./img/baby.png" alt="baby" class="baby1" data-aos="fade-up">
-            <!-- animated text title section start -->
-            <div class="ttl">
-                <h1>Maisun</h1>
-                <h1>Maisun</h1>
+    <!-- snow fall background start -->
+    <div id="snow" count="200"></div>
+    <input 
+      id="toggle-snow"
+      type="checkbox" 
+      checked="true" 
+      onclick="showSnow(this.checked == true)"
+    >
+    </input>
+    <!-- snow fall background end -->
+
+    <!-- card section start -->
+    <div class="card">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="card-inner">
+            <img src="./img/baby2.png" alt="baby_image" class="baby2">
+            <h1>Maisun Rahman Mehek</h1>
+            <div class="data_table">
+                <table>
+                    <tr><td>Fathers Name </td> <td style="padding-left: 10px;">: Masudur Rahman Masum</td></tr>
+                    <tr><td>Mothers Name </td> <td style="padding-left: 10px;">: Samia Samad Mihi</td></tr>
+                    <tr><td>Date of Birth </td> <td style="padding-left: 10px;">: 22 June 2023</td></tr>
+                    <tr><td>Day & Time </td> <td style="padding-left: 10px;">: Thursday, 7:30 PM </td></tr>
+                </table>
             </div>
-            <!-- animated text title section end -->
-            </div>
+
+            </table>
         </div>
     </div>
 
+    <!-- card section end -->
 
- <!-- aos plugin js cdn -->
-
- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
- <script>
-   AOS.init({
-       offset: 200,duration: 900
-   });
- </script>
-<script  src="./js/main.js"></script>
-
+    <script src="./js/birth.js"></script>
 </body>
 </html>
-
-                                                     
