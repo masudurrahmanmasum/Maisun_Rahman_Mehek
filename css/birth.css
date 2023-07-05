@@ -91,6 +91,54 @@ tr{
     position: absolute;
     animation: move-up 2s ease-in infinite alternate-reverse;
 }
+/* button style design here */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    margin-top: 20px;
+}
+  
+.wrapper a {
+    display: block;
+    width: 89px;
+    line-height: 30px;
+    background: rgb(255 255 255 / 17%);
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: sans-serif;
+    border-radius: 10px;
+}
+  
+  .wrapper a:before,
+  .wrapper a:after{
+    position: absolute;
+    content: "";
+    transition: all .25s;
+  }
+  
+  .wrapper a:before {
+    border-bottom: 2px solid #efa7c8;
+    border-left: 2px solid #efa7c8;
+    width: 10%;
+    height: 30%;
+    left: -5px;
+    bottom: -5px;
+}
+
+.wrapper a:after {
+    border-top: 2px solid #efa7c8;
+    border-right: 2px solid #efa7c8;
+    width: 10%;
+    height: 30%;
+    top: -5px;
+    right: -5px;
+}
 
 .circle:nth-child(1) {
     top:-25px;
