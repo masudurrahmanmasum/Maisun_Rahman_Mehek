@@ -1,3 +1,8 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     display: flex;
     justify-content: center;
@@ -15,7 +20,6 @@ body {
     cursor: pointer;
     transition: all 0.2s;
 }
-
 .card-inner {
     width: inherit;
     height: inherit;
@@ -24,12 +28,35 @@ body {
     backdrop-filter: blur(10px);
     border-radius: 8px;
 }
+.baby2{
+    width: 40%;
+    margin: auto;
+    display: block;
+}
+.card-inner h1{
+    text-align: center;
+    color: #efa7c8;
+    font-family: 'Kablammo', cursive;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+}
 
 /* Visit https://democoding.in/ for more free css animation */
 .card:hover {
-    transform: scale(1.04) rotate(1deg);
+    transform: scale(1.2) rotate(2deg);
+    transition: 0.5s;
 }
-
+.data_table{
+    padding: 15px 0px 30px 40px;
+}
+.data_table table{
+    color: #ffffffbd;
+    font-size: 16px;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+tr{
+    line-height: 25px;
+}
 .circle {
     width: 100px;
     height: 100px;
