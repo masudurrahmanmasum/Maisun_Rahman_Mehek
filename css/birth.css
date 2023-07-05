@@ -114,3 +114,14 @@ tr{
     }
 }
 /* card section style end */
+
+
+@media only screen and (max-width: 767px) {
+    .card {
+        width: 400px;
+    }
+    .card-inner h1 {
+        font-size: 22px;
+        letter-spacing: 1px;
+      }
+}
