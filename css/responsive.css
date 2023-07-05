@@ -1,0 +1,112 @@
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 767px) {
+    .name_section h1{
+        transform: translateY(-350%);
+    }
+    .text_video {
+        width: 100%;
+    }
+    .name_section h1 {
+        font-size: 1.5rem !important;
+    }
+    .sername{
+        top: 40%;
+    }
+    .heart {
+        top: 57%;
+    }
+    .sername h1 {
+        letter-spacing: 10px!important;
+    }
+    .main_house{
+        padding-bottom: 100px;
+    }
+    .text_video {
+        margin-top: -250px;
+    }
+    .ttl h1 {
+        font-size: 6rem;
+    }
+    .baby1 {
+        margin-top: 100px;
+        width: 80%;
+    }
+    .ttl h1 {
+        font-size: 4rem;
+        transform: translate(-50%,-200%);
+    }
+
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    /* .name_section h1 {
+        font-size: 2.5rem;
+    }
+    .left_house_sec img{
+        margin-top: 50px!important;
+        width: 85vw;
+        margin: auto;
+    }
+
+    .text_video {
+        width: 100%;
+    }
+    .right_house_sec {
+        flex-basis: 100%;
+    }
+    .right_house_sec img{
+        width: 80vw;
+        margin: auto;
+    }
+    .main_house{
+        padding-bottom: 150px;
+    }
+    .ttl h1 {
+        transform: translate(-50%,190%) !important;
+        font-size: 6rem;
+    }
+ */
+
+    /* .baby1{
+        margin-top: 100px;
+    } */
+
+
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    /* .main_house{
+        padding-top: 50px;
+    }
+    .ttl h1{
+        font-size: 3rem;
+    }
+    .right_house_sec{
+        margin-top: 50px;
+    }
+    .text_video {
+        width: 100%;
+    }
+    .name_section h1 {
+        font-size: 3.8rem;
+    }
+    .ttl h1 {
+        transform: translate(-50%,230%);
+        font-size: 6rem;
+    } */
+    .left_house_sec,.right_house_sec{
+        flex-basis: 100%;
+    }
+    .main_house{
+        padding-bottom: 150px;
+    }
+    .baby1{
+        margin-top: 200px;
+    }
+    .ttl h1 {
+        font-size: 4rem;
+        transform: translate(-50%,-200%);
+    }
+
+}
