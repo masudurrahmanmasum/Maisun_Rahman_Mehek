@@ -290,7 +290,7 @@
 /* house section style end */
 
 /* go to cover page */
-.to-top {
+.to-back {
     background: #00aced;
     position: fixed;
     bottom: 45px;
@@ -307,9 +307,9 @@
     opacity: 1;
     transition: all .4s;
     z-index: 12;
-  }
+}
   
-  .to-top.active {
+  .to-back.active {
     bottom: 32px;
     opacity: 1;
-  }
+}
