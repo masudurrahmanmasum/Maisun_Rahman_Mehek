@@ -1,51 +1,45 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Birth Details</title>
-    <link rel="stylesheet" href="./css/birth.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kablammo&display=swap" rel="stylesheet">
+    <title>Home</title> 
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-
-    <!-- snow fall background start -->
-    <div id="snow" count="200"></div>
-    <input 
-      id="toggle-snow"
-      type="checkbox" 
-      checked="true" 
-      onclick="showSnow(this.checked == true)"
-    >
-    </input>
-    <!-- snow fall background end -->
-
-    <!-- card section start -->
-    <div class="card">
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="card-inner">
-            <img src="./img/baby2.png" alt="baby_image" class="baby2">
-            <h1>Maisun Rahman Mehek</h1>
-            <div class="data_table">
-                <table>
-                    <tr><td>Fathers Name </td> <td style="padding-left: 10px;">: Masudur Rahman Masum</td></tr>
-                    <tr><td>Mothers Name </td> <td style="padding-left: 10px;">: Samia Samad Mihi</td></tr>
-                    <tr><td>Date of Birth </td> <td style="padding-left: 10px;">: 22 June 2023</td></tr>
-                    <tr><td>Day & Time </td> <td style="padding-left: 10px;">: Thursday, 7:30 PM </td></tr>
-                </table>
-                <div class="wrapper">
-                    <a href="#"> Go Back</a>
+    <div class="container">
+        <span class="off">Off</span>
+        <div class="home_switch">
+            <input name="switch" id="switch" type="checkbox" onclick="chx_box()">
+            <label class="switch" for="switch"></label>
+        </div>
+        <span class="on">On</span>
+        <div class="stylish_btn">
+            <button class="cssbuttons-io-button" id="go_btn"> Go Ahead
+                <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg>
                 </div>
-            </div>
+            </button>
         </div>
     </div>
 
-    <!-- card section end -->
-
-    <script src="./js/birth.js"></script>
+    <script>
+        const work_switch = document.getElementById("switch");
+        const show_on = document.querySelector(".on");
+        const show_off = document.querySelector(".off");
+        const go_btn = document.querySelector("#go_btn");
+        function chx_box(){
+        if(work_switch.checked == true){
+            show_on.style.visibility="visible";
+            show_off.style.visibility="hidden";
+            go_btn.style.visibility="visible";
+        }
+        else{
+            show_off.style.visibility="visible";
+            show_on.style.visibility="hidden";
+            go_btn.style.visibility="hidden";
+        }
+        }
+    </script>
 </body>
 </html>
