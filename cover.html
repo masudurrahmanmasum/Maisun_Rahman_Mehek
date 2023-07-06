@@ -12,11 +12,30 @@
             <span>Maisun</span>
           </button>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="name.html">Name</a></li>
-            <li><a href="birth.html">Birth Date</a></li>
-            <li><a href="#">Play</a></li>
+            <li class="home_page">Home</li>
+            <li class="name_page"><a href="name.html">Name</a></li>
+            <li class="birth_page"><a href="birth.html">Birth Date</a></li>
+            <li class="play_page"><a href="#">Play</a></li>
           </ul>
     </div>
+
+    <script>
+        const home = document.querySelector(".home_page");
+        home.addEventListener( "click" , () =>{
+        window.location="index.html";
+      })
+        const name = document.querySelector(".name_page");
+        name.addEventListener( "click" , () =>{
+        window.location="name.html";
+      })
+        const birth = document.querySelector(".birth_page");
+        birth.addEventListener( "click" , () =>{
+        window.location="birth.html";
+      })
+        const play = document.querySelector(".play_page");
+        play.addEventListener( "click" , () =>{
+        window.location="#";
+      })
+    </script>
 </body>
 </html>

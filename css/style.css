@@ -5,6 +5,8 @@
 }
 body{
     background: #0F172A;
+    border: 2px solid tomato;
+    height: 100vh;
 }
 .container{
     transform: translateY(40%);

@@ -288,3 +288,28 @@
 }
 /* animated Wave text title style end */
 /* house section style end */
+
+/* go to cover page */
+.to-top {
+    background: #00aced;
+    position: fixed;
+    bottom: 45px;
+    right: 32px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: #fff;
+    text-decoration: none;
+    opacity: 1;
+    transition: all .4s;
+    z-index: 12;
+  }
+  
+  .to-top.active {
+    bottom: 32px;
+    opacity: 1;
+  }
