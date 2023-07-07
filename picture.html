@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kablammo&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./img/favicon-16x16.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/7627543d97.js" crossorigin="anonymous"></script>
 </head>
 <style>
     *,*::after,*::before{
@@ -122,6 +125,33 @@ body {
 /* card section style end */
 
 
+
+
+/* go to cover page */
+.to-back {
+    background: #00aced;
+    position: fixed;
+    bottom: 45px;
+    right: 32px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: #fff;
+    text-decoration: none;
+    opacity: 1;
+    transition: all .4s;
+    z-index: 12;
+}
+  
+  .to-back.active {
+    bottom: 32px;
+    opacity: 1;
+}
+
 @media only screen and (max-width: 767px) {
     .card {
         width: 400px;
@@ -129,7 +159,11 @@ body {
     .card-inner h1 {
         font-size: 22px;
         letter-spacing: 1px;
-      }
+    }
+    .to-back {
+        bottom: 150px;
+        right: 70px;
+    }
 }
 </style>
 <body>
@@ -151,9 +185,19 @@ body {
             <img src="./img/my_baby.png" alt="Maisun" class="baby2">
         </div>
     </div>
-
     <!-- card section end -->
 
+    <!-- go to cover page-->
+    <a href="#" class="to-back">
+    <i class="fa-solid fa-arrow-left" class="to_left"></i>
+    </a>
+
     <script src="./js/birth.js"></script>
+    <script>
+        const to_left = document.querySelector(".to-back");
+        to_left.addEventListener("click", ()=>{
+        window.location="cover.html";
+    })
+    </script>
 </body>
 </html>
