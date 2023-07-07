@@ -98,11 +98,11 @@ function getWin(p, c) {
         computerScore.innerHTML = computer
     }
 
-    if(computer < "2"){
-        if(player == "2"){
-            console.log("see photo");
-        }else{
-            console.log("hide photo");
+    if(computer < "4"){
+        if(player == "3"){
+            window.location= "waiting.html";
+        }else if(computer == "3"){
+            window.location = "lost.html";
         }
     }
     const resetGame = document.querySelector(".reset_game");
