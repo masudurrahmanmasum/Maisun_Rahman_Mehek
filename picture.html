@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birth Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kablammo&display=swap" rel="stylesheet">
+</head>
+<style>
+    *,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+
+    min-height: 100vh;
+    /* If you want to change the site height you can remove overflow-y */
+    /* pureSnow will automatically detect height of body tag */
+    overflow-y: hidden;
+    margin: 0;
+}
+
+/* snowfall background style start */
+#toggle-snow{
+    display: none;
+  }
+  .snowflake {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(white, white);
+    /* Workaround for Chromium's selective color inversion */
+    border-radius: 50%;
+    filter: drop-shadow(0 0 10px white);
+}
+#snow{
+    position: absolute ;
+    top: 0 ;
+    left: 0 ;
+}
+/* snowfall background style end */
+
+
+/* card section style start */
+.card {
+    cursor: pointer;
+    transition: all 0.2s;
+}
+/* .card-inner {
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+} */
+.baby2{
+    width: 80%;
+    margin: auto;
+    display: block;
+    z-index: -5;
+    border-radius: 5px;
+    border: 0.1px solid #ff6347ed;
+}
+
+
+/* button style design here */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    margin-top: 20px;
+}
+  
+.wrapper a {
+    display: block;
+    width: 89px;
+    line-height: 30px;
+    background: rgb(255 255 255 / 17%);
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: sans-serif;
+    border-radius: 10px;
+}
+  
+  .wrapper a:before,
+  .wrapper a:after{
+    position: absolute;
+    content: "";
+    transition: all .25s;
+  }
+  
+  .wrapper a:before {
+    border-bottom: 2px solid #efa7c8;
+    border-left: 2px solid #efa7c8;
+    width: 10%;
+    height: 30%;
+    left: -5px;
+    bottom: -5px;
+}
+
+.wrapper a:after {
+    border-top: 2px solid #efa7c8;
+    border-right: 2px solid #efa7c8;
+    width: 10%;
+    height: 30%;
+    top: -5px;
+    right: -5px;
+}
+/* card section style end */
+
+
+@media only screen and (max-width: 767px) {
+    .card {
+        width: 400px;
+    }
+    .card-inner h1 {
+        font-size: 22px;
+        letter-spacing: 1px;
+      }
+}
+</style>
+<body>
+
+    <!-- snow fall background start -->
+    <div id="snow" count="200"></div>
+    <input 
+      id="toggle-snow"
+      type="checkbox" 
+      checked="true" 
+      onclick="showSnow(this.checked == true)"
+    >
+    </input>
+    <!-- snow fall background end -->
+
+    <!-- card section start -->
+    <div class="card">
+        <div class="card-inner">
+            <img src="./img/my_baby.png" alt="Maisun" class="baby2">
+        </div>
+    </div>
+
+    <!-- card section end -->
+
+    <script src="./js/birth.js"></script>
+</body>
+</html>
