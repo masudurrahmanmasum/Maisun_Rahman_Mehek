@@ -129,8 +129,23 @@ body {
     transition: all .4s;
     z-index: 12;
 }
-  
   .to-back.active {
     bottom: 32px;
     opacity: 1;
+}
+
+@media only screen and (max-width: 767px) {
+    .container .top_info {
+        width: 100%;
+        font-size: 19px;
+    }
+    .container .top_info > button {
+        font-size: 15px;
+    }
+    .game_container > div > img {
+        width: 100%;
+    }
+    .game_container > div > span {
+        font-size: 18px;
+    }
 }
