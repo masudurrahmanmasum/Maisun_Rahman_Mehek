@@ -7,6 +7,16 @@
 body {
     background: #0D1721;
 }
+/* preeloader style */
+.preeloader{
+    width: 99.5%;
+    height: 100vh;
+    background: #000 url("../img/loader.gif") no-repeat center center;
+    background-size: 40%;
+    position: fixed;
+    z-index: 100;
+    border: none;
+  }
 .container .top_info {
     width: 80%;
     padding: 20px;
@@ -30,19 +40,6 @@ body {
     color: red;
     font-weight: bold;
 }
-/* .container .top_info > button {
-    padding: 15px;
-    width: 80%;
-    max-width: 300px;
-    font-size: 20px;
-    display: block;
-    margin: 0 auto;
-    margin-top: 20px;
-    background: #222;
-    color: #fff;
-    border-radius: 4px;
-    user-select: none;
-} */
 .container .top_info > button {
     padding: 14px;
     width: 22%;

@@ -10,9 +10,17 @@ body {
     align-items: center;
     justify-content: center;
     background: #0A2647;
-    border: 2px solid yellow;
 }
-
+/* preeloader style */
+.preeloader{
+    width: 99.5%;
+    height: 100vh;
+    background: #000 url("../img/loader.gif") no-repeat center center;
+    background-size: 40%;
+    position: fixed;
+    z-index: 100;
+    border: none;
+  }
 button.hover {
  border: none;
  position: relative;

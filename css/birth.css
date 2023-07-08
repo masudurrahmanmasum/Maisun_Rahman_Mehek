@@ -16,6 +16,16 @@ body {
     overflow-y: hidden;
     margin: 0;
 }
+/* preeloader style */
+.preeloader{
+    width: 99.5%;
+    height: 100vh;
+    background: #000 url("../img/loader.gif") no-repeat center center;
+    background-size: 40%;
+    position: fixed;
+    z-index: 100;
+    border: none;
+  }
 
 /* snowfall background style start */
 #toggle-snow{

@@ -1,7 +1,16 @@
 //Tudo explicado abaixo
 //Everything explained below
 
+// loader section program
+const loader = document.querySelector(".preeloader");
+const bdy = document.querySelector(".page_body");
+window.addEventListener("load", function(){
+    loader.style.display = "none";
+    bdy.style.borderWidth ="2px";
+    bdy.style.borderColor ="tomato";
+    bdy.style.borderStyle = "solid";
 
+})
 
 //Pegando as 3 opcoes para modificar no JS
 

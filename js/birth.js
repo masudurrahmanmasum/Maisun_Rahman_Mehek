@@ -1,3 +1,11 @@
+// preeloader section program
+const loader = document.querySelector(".preeloader");
+const bdy = document.querySelector(".page_body");
+window.addEventListener("load", function(){
+    loader.style.display = "none";
+
+})
+
 let snowflakesCount = 200; // Snowflake count, can be overwritten by attrs
 let baseCss = ``;
 

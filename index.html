@@ -4,10 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+    <script src="https://kit.fontawesome.com/7627543d97.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" type="image/x-icon" href="./img/favicon-16x16.png">
 </head>
-<body>
+<body class="page_body">
+    <!-- preeloader division -->
+    <div class="preeloader">
+    </div>
+    <!-- dissmissable message -->
+  <div class=" toast_container" data-aos="fade-up">
+    <div class="toast_msg">
+      <div class="alert alert-danger alert-dismissible dismiss_msg" role="alert">
+        <!-- <button class="btn-close rmv"></button> -->
+        <span><i class="bi bi-award"></i> Play game and get 3 point to see Maisun</span>
+      </div>
+    </div>
+  </div>
     <div class="container">
         <span class="off">Off</span>
         <div class="home_switch">
@@ -24,26 +38,28 @@
         </div>
     </div>
 
+    <script src="./js/main.js"></script>
     <script>
-        const work_switch = document.getElementById("switch");
-        const show_on = document.querySelector(".on");
-        const show_off = document.querySelector(".off");
-        const go_btn = document.querySelector("#go_btn");
-        function chx_box(){
-        if(work_switch.checked == true){
-            show_on.style.visibility="visible";
-            show_off.style.visibility="hidden";
-            go_btn.style.visibility="visible";
-        }
-        else{
-            show_off.style.visibility="visible";
-            show_on.style.visibility="hidden";
-            go_btn.style.visibility="hidden";
-        }
-        }
-        go_btn.addEventListener("click", ()=>{
-            window.location ="cover.html";
-        })
+      // switch on off function
+const work_switch = document.getElementById("switch");
+const show_on = document.querySelector(".on");
+const show_off = document.querySelector(".off");
+const go_btn = document.querySelector("#go_btn");
+function chx_box(){
+if(work_switch.checked == true){
+    show_on.style.visibility="visible";
+    show_off.style.visibility="hidden";
+    go_btn.style.visibility="visible";
+}
+else{
+    show_off.style.visibility="visible";
+    show_on.style.visibility="hidden";
+    go_btn.style.visibility="hidden";
+}
+}
+go_btn.addEventListener("click", ()=>{
+    window.location ="cover.html";
+})
     </script>
 </body>
 </html>

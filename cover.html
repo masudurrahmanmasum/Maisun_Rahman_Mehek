@@ -8,6 +8,8 @@
     <link rel="icon" type="image/x-icon" href="./img/favicon-16x16.png">
 </head>
 <body>
+    <!-- preeloader division -->
+    <div class="preeloader"></div>
     <div class="main_content">
         <button class="hover">
             <span>Maisun</span>
@@ -37,6 +39,16 @@
         play.addEventListener( "click" , () =>{
         window.location="game.html";
       })
+    </script>
+    <script>
+        const loader = document.querySelector(".preeloader");
+        const bdy = document.querySelector(".page_body");
+        window.addEventListener("load", function(){
+            loader.style.display = "none";
+            bdy.style.borderWidth ="2px";
+            bdy.style.borderColor ="yellow";
+            bdy.style.borderStyle = "solid";
+        })
     </script>
 </body>
 </html>
